@@ -67,17 +67,18 @@ public class Cell {
      * @return Character representation of the cell's state
      */
 	
-    public char getStateRep() {
-	char toReturn = ' ';
-	if (_state == State.DEAD) {
-	    toReturn = '.';
-	} else if (_state == State.ALIVE) {
-	    toReturn = '*';
-	} else {
-	    toReturn = ' ';
-	}
-	return toReturn;
-    }
+
+	public char getStateRep() {
+		char toReturn = ' ';
+		if (_state == State.DEAD) {
+			toReturn = ' ';
+		} else if (_state == State.ALIVE) {
+			toReturn = '*';
+		} else {
+			toReturn = ' ';
+		}
+		return toReturn;
+  }
 	
     /**
      * Constructor for a new cell.
